@@ -26,5 +26,8 @@ public class IMDBRatingTest
         averageRating = rater.addNewRating(11);
         assertTrue(averageRating == 2.0, "Adding 5th rating: rate should lower than 10.0");
 
+        averageRating = rater.addNewRating(6);
+        assertTrue(averageRating == 3.0, "Adding 6th rating: rate should lower than 10.0");
+
     }
 }
